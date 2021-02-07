@@ -439,10 +439,14 @@
 <h1>Update 1 - Project Updates<a class="headerlink" href="#update-1-project-updates" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction:<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Appfolio is a property management company that helps customers manage their rental properties. The capstone team is working with Appfolio to help process invoices from the customers using machine learning. These invoices will then be processed by the model we develop to find the exact price needed to be covered or charged.</p>
+<p>Appfolio is a property management company that helps customers manage their rental properties. The capstone team is working with Appfolio to help process invoices from the customers using machine learning. These invoices will then be processed by the model we develop to find the exact price needed to be covered or charged. This would be a big step towards automating some tasks of the accountant role.</p>
 <ul class="simple">
 <li><p>To help us compute the model, we are utilizing receipt data from the ICDAR competition from 2019 (<a class="reference external" href="https://rrc.cvc.uab.es/?ch=13&amp;com=introduction">https://rrc.cvc.uab.es/?ch=13&amp;com=introduction</a>)  This dataset, which is public, offers us the chance to look at and understand the most important parts of a receipt, including the total value, and gives us a chance to generate a model to recognize it from an image.</p></li>
 </ul>
+<div class="figure align-default" id="receipt1">
+<a class="reference internal image-reference" href="../../_images/receipt1.png"><img alt="../../_images/receipt1.png" src="../../_images/receipt1.png" style="height: 150px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Receipt Image</span><a class="headerlink" href="#receipt1" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 <div class="section" id="what-we-have-done-so-far">
 <h2>What we have done so far:<a class="headerlink" href="#what-we-have-done-so-far" title="Permalink to this headline">¶</a></h2>
@@ -461,6 +465,14 @@
 <div class="section" id="future-tasks">
 <h2>Future Tasks:<a class="headerlink" href="#future-tasks" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><p>Determine which ML models or implementations would work best for our objectives:</p>
+<ul>
+<li><p>RNN/Faster RNN</p></li>
+<li><p>YOLO</p></li>
+<li><p>Detectron 2</p></li>
+</ul>
+</li>
+<li><p>Implement an Natural Language Processing approach for extracting important keywords</p></li>
 <li><p>Completing the “Total” amount extraction task with a very high level of accuracy.</p></li>
 <li><p>Since different models require different metadata, create different pipelines for the different models.</p></li>
 <li><p>Creation of the input text file with coordinates. From an image, create a text file containing every word/label and a set of coordinates to identify its location. Focusing on the text with the relevant information (including total, the values associated with total, etc)</p></li>
